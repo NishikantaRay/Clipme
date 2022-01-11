@@ -1,0 +1,22 @@
+main {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106891/san-francisco-street.JPG) no-repeat center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+section {
+	color: white;
+	width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+}
+section#bad {
+	background: black;
+	opacity: 0.4;
+}
+section#good {
+	position: relative;
+	background: rgba(0,0,0,0.4);
+}
