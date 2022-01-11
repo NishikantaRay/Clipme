@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Clipme</title>
-  </head>
-  <body>
-    <div class="container pt-4">
-      <h1 class="text-dark text-center pb-3">
-        Clip <span style="color: #ff0000">me</span>
-      </h1>
-      <form name="controls" id="controls">
-        <select class="form-control" style="width: 380px">
-          <option selected>fonts</option>
-          <option>arial black</option>
-        </select>
-        <br /><textarea
-          class="form-control"
-          style="width: 380px; height: 282px; border-radius: 0.5rem"
-          id="output"
-          name="output"
-          rows="9"
-          wrap="virtual"
-          cols="48"
-        ></textarea
-        ><br />
+</head>
 
-        <!-- <p class="text-center"><input style="background-color: #FF0000; color: #fff;" class="btn" type="submit" value="Save" onclick="save()"><input style="background-color: #FF0000; color: #fff;" class="btn" type="reset" value="Reset"></p> -->
-      </form>
+<body>
+    <div class="container pt-4">
+        <h1 class="text-dark text-center pb-3">
+            Clip <span style="color: #ff0000">me</span>
+        </h1>
+        <form name="controls" id="controls">
+            <select class="form-control" style="width: 380px">
+                <option selected>fonts</option>
+                <option>arial black</option>
+            </select>
+                <br>
+                <div id="notepad" class="form-control" style="width: 380px; height: 282px; border-radius: 0.5rem" contenteditable></div>
+        </form>
     </div>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
